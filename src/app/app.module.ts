@@ -5,6 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatExpansionModule } from '@angular/material/expansion';
+import {MatCardModule} from '@angular/material/card';
+import {MatDividerModule} from '@angular/material/divider';
+
+
 
 
 
@@ -16,7 +20,9 @@ import { MatExpansionModule } from '@angular/material/expansion';
     BrowserModule,
     AppRoutingModule,
     NoopAnimationsModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatCardModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

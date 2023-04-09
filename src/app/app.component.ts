@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'astrology';
+  public title = 'astrology';
+
+  public items: {title: string; description: string}[] = [{title: 'Some title', description: 'ololololololol'}, {title: 'Some title', description: 'ololololololol'}, {title: 'Some title', description: 'ololololololol'}]
+
+  public feedbacks: string[] = ['./assets/1cat.jpeg', './assets/2cat.jpeg', './assets/3cat.jpeg', './assets/2cat.jpeg', './assets/1cat.jpeg']
 }
