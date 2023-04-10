@@ -2,7 +2,6 @@
   display: flex;
   height: 70px;
   align-items: center;
-  justify-content: center;
 
   .links-list {
 
@@ -14,6 +13,8 @@
   }
 
   .logo {
+    margin-left: auto;
+    margin-right: -120px;
 
     h1 {
       font-family: 'Cormorant Garamond', serif;
@@ -24,19 +25,11 @@
   }
 
   .links-container {
-    position: absolute;
-    right: 0;
+    margin-left: auto;
 
     a {
       padding-right: 30px;
       color: #5b175d;
-
-    }
-
-    @media screen and (max-width: 600px) {
-       a {
-        padding-right: 10px;
-      }
     }
 
   }
@@ -55,6 +48,7 @@ body {
 }
 
 .body {
+  width: fit-content;
 
 
 
@@ -104,17 +98,6 @@ body {
     h3 {
       margin-top: 0;
     }
-
-    .services-container {
-      display: flex;
-    justify-content: space-around;
-    gap: 50px;
-    flex-wrap: wrap;
-    }
-
-    .service-card {
-      max-width: 300px;
-    }
   }
 
   .feedback {
@@ -155,5 +138,3 @@ body {
   }
 
 }
-
-
