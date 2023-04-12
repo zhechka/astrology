@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
+import { DialogPosition, MatDialog } from '@angular/material/dialog';
+import { servicesData } from './data/services-data';
 import { DialogComponent, DialogData } from './dialog/dialog.component';
 
 @Component({
@@ -8,11 +9,9 @@ import { DialogComponent, DialogData } from './dialog/dialog.component';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  public title = 'astrology';
+  public items: DialogData[] = servicesData;
 
-  public items: DialogData[] = [{title: 'Some title', description: 'ololololololol', shortDescription: 'kjdfklsdjlfj df df df d fd d d f f ddd fd f  fddfdf df dd ddslkfjdskl', price: 20}, {title: 'Some title', description: 'ololololololol',shortDescription: 'kjdfkl d df d fd fd f f e wefknefknfd fd  kd fkd fd fkd fdjlfjdslkfjdskl', price: 200}, {title: 'Some title', description: 'ololololololol',shortDescription: 'kjdfklsdffmdfkmdf d fmdfmdfmd d fd k kd fld flk flsd flds flkds fdsjlfjdslkfjdskl', price: 50}]
-
-  public slides: string[] = ['./assets/3cat.jpeg', './assets/3cat.jpeg', './assets/3cat.jpeg', './assets/3cat.jpeg', './assets/3cat.jpeg']
+  public slides: string[] = ['./assets/feedback1.jpg', './assets/feedback2.jpg','./assets/feedback3.jpg','./assets/feedback4.jpg','./assets/feedback5.jpg','./assets/feedback6.jpg','./assets/feedback7.jpg','./assets/feedback8.jpg','./assets/feedback9.jpg','./assets/feedback10.jpg','./assets/feedback11.jpg','./assets/feedback12.jpg','./assets/feedback13.jpg', './assets/feedback14.jpg', './assets/feedback15.jpg']
 
   constructor(public dialog: MatDialog) {}
 

@@ -3,9 +3,12 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 export interface DialogData {
   title: string;
-  description: string;
   shortDescription: string;
-  price: number;
+  description: string;
+  terms?: string;
+  price?: number;
+  duration?: string;
+  format?: string;
 }
 
 @Component({

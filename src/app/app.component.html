@@ -25,11 +25,10 @@
       <div class="intro-text">
         <img class="my-photo" src="./assets/foto1.jpg" />
         <h2>
-          Привет, я — Аня! Практикующий астролог, таролог, женский коуч. ‌
+          Привет! Меня зовут Аня и я практикующий астролог.
         </h2>
         <p>
-          ‌Моя миссия — возвращать людей к себе настоящим и находить самый
-          лёгкий способ выхода из различных ситуаций.
+          ‌Моя миссия — раскрывать уникальность и потенциал каждого человека, чтобы в этом мире было как можно больше осознанных счастливых людей!
         </p>
       </div>
     </section>
@@ -38,17 +37,20 @@
       <div class="services-container">
         <mat-card *ngFor="let item of items" class="service-card">
           <mat-card-header>
-            <mat-card-subtitle>Услуги</mat-card-subtitle>
+            <mat-card-subtitle>Услуга</mat-card-subtitle>
             <mat-card-title>{{item.title}}</mat-card-title>
           </mat-card-header>
           <mat-card-content>
             <p>{{item.shortDescription}}</p>
-            <mat-divider></mat-divider>
+
           </mat-card-content>
-          <mat-card-actions>
-            <button mat-button (click)="openDialog(item)">Описание услуги</button>
-          </mat-card-actions>
+
+
           <mat-card-footer>
+            <mat-divider></mat-divider>
+            <mat-card-actions>
+              <button mat-button (click)="openDialog(item)">Описание услуги</button>
+            </mat-card-actions>
           </mat-card-footer>
         </mat-card>
       </div>
@@ -58,8 +60,8 @@
       <h3>Отзывы</h3>
 
       <div class="feedback-container">
-        <swiper-container slides-per-view="1" speed="500" loop="true" navigation="true" mousewheel-force-to-axis="true">
-          <swiper-slide *ngFor="let slide of slides" style="text-align: center;" ><img [src]="slide"></swiper-slide>
+        <swiper-container slides-per-view="1" speed="500" loop="true" pagination="true" mousewheel-force-to-axis="true" space-beetwen="0">
+          <swiper-slide *ngFor="let slide of slides" style="text-align: center;" ><img class="swiper-img" [src]="slide"></swiper-slide>
 
         </swiper-container>
         <!-- <mat-card *ngFor="let card of feedbacks" class="card">
