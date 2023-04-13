@@ -57,9 +57,13 @@ body {
 }
 
 .body {
-
-
-
+  section {
+    h3 {
+      display: flex;
+      justify-content: center;
+      text-transform: uppercase;
+    }
+  }
 }
 
 .content {
@@ -78,6 +82,7 @@ body {
 
     .intro-text {
       padding: 2.5rem;
+      padding-bottom: 0;
       text-align: center;
 
       h2 {
@@ -85,7 +90,7 @@ body {
       }
 
       p {
-        font-size: 1rem;
+        font-size: 1.5rem;
       }
 
 
@@ -128,6 +133,9 @@ body {
         button[mat-button] {
           width: 100%;
         }
+        .action-button {
+          background-color: #fcf3c480;
+        }
       }
 
 
@@ -153,25 +161,17 @@ body {
         margin: 0.5rem;
       }
 
-      swiper-container {
-        width: 100%;
-        height: 100%;
-
-        swiper-slide {
-          text-align: center;
-          font-size: 18px;
-          background: #fff;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        img {
+      @media screen and (max-width: 600px) {
+        swiper-container {
           width: 100%;
-          height: auto;
-          object-fit: cover;
-          object-position: center;
+          height: 100%;
+
+          img {
+            width: 100%;
+          }
         }
       }
+
 
     }
   }
@@ -183,6 +183,7 @@ body {
   display: flex;
   align-items: center;
   height: 50px;
+  gap: 30px;
 
   .links-container {
     display: flex;
